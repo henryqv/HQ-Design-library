@@ -5,6 +5,7 @@ import re
 from pathlib import Path
 from typing import Any
 
+import yaml
 from mcp.server.fastmcp import FastMCP
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,6 +17,20 @@ def load_catalog() -> dict[str, Any]:
 
 def read(rel: str) -> str:
     return (ROOT / rel).read_text(encoding="utf-8")
+
+FRONTMATTER_RE = re.compile(r"^---\n(.*?)\n---\n", re.DOTALL)
+
+def frontmatter(design_md_text: str) -> dict[str, Any]:
+    """Parse the YAML front matter (design tokens) out of a DESIGN.md file.
+
+    Since v0.2.0 every system stores its tokens only here (colors, typography,
+    rounded, spacing, components) — there is no separate tokens.json anymore,
+    it would just desync from the DESIGN.md that's the actual source of truth.
+    """
+    match = FRONTMATTER_RE.match(design_md_text)
+    if not match:
+        return {}
+    return yaml.safe_load(match.group(1)) or {}
 
 def normalize(value: str) -> list[str]:
     return [x.lower() for x in re.findall(r"[a-z0-9-]+", value.lower())]
@@ -106,13 +121,20 @@ def get_pattern(category: str, name: str) -> str:
 
 @mcp.tool()
 def get_tokens(system: str | None = None) -> str:
-    """Return core tokens or the token file for a named design system."""
+    """Return core tokens, or the design tokens (colors, typography, rounded,
+    spacing, components) for a named design system — parsed straight from its
+    DESIGN.md YAML front matter, the single source of truth for that system."""
     if not system:
         return read("tokens/core.json")
     data = load_catalog()
     for item in data["systems"]:
         if item["name"].lower() == system.lower():
-            return read(f"systems/{item['name']}/tokens.json")
+            tokens = frontmatter(read(item["path"]))
+            tokens.pop("version", None)
+            tokens.pop("name", None)
+            tokens.pop("description", None)
+            tokens.pop("omitted", None)
+            return json.dumps(tokens, ensure_ascii=False, indent=2)
     return f"Design system not found: {system}"
 
 @mcp.tool()

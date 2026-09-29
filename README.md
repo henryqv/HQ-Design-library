@@ -124,11 +124,19 @@ search_patterns(
 
 ## CSS token export
 
+Since v0.2.0, every system's tokens live only in its DESIGN.md YAML front
+matter — use the official `design.md` CLI to export them, no custom script
+needed:
+
 ```bash
-python mcp/export_css.py legal
+npx @google/design.md export systems/legal/DESIGN.md --format css-vars
+npx @google/design.md export systems/legal/DESIGN.md --format css-tailwind
+npx @google/design.md export systems/legal/DESIGN.md --format dtcg
 ```
 
-The command prints CSS custom properties for the selected design system.
+(`mcp/export_css.py` was removed — it read the now-deleted per-system
+`tokens.json`, which duplicated the DESIGN.md tokens and would have gone out
+of sync with them.)
 
 ## HTML previews
 
