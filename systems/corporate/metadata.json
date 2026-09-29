@@ -1,0 +1,22 @@
+{
+  "name": "corporate",
+  "industries": [
+    "corporate",
+    "professional-services"
+  ],
+  "styles": [
+    "corporate",
+    "modern",
+    "institutional"
+  ],
+  "moods": [
+    "trustworthy",
+    "confident",
+    "technical"
+  ],
+  "intents": [
+    "establish-trust",
+    "build-credibility",
+    "drive-contact"
+  ]
+}

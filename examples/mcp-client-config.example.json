@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "hq-design-library": {
+      "command": "python",
+      "args": [
+        "/ABSOLUTE/PATH/hq-design-library/mcp/server.py"
+      ]
+    }
+  }
+}

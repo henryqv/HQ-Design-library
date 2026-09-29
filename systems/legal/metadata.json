@@ -1,0 +1,23 @@
+{
+  "name": "legal",
+  "industries": [
+    "legal",
+    "professional-services"
+  ],
+  "styles": [
+    "editorial",
+    "premium",
+    "institutional"
+  ],
+  "moods": [
+    "authoritative",
+    "calm",
+    "timeless"
+  ],
+  "intents": [
+    "establish-authority",
+    "establish-trust",
+    "drive-contact",
+    "build-credibility"
+  ]
+}

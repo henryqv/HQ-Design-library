@@ -1,0 +1,37 @@
+{
+  "version": "0.2.0",
+  "design_systems": 6,
+  "patterns": 15,
+  "categories": [
+    "cards",
+    "content",
+    "cta",
+    "faq",
+    "footer",
+    "forms",
+    "hero",
+    "navigation",
+    "pricing",
+    "stats",
+    "team",
+    "testimonials"
+  ],
+  "taxonomy_dimensions": [
+    "industries",
+    "styles",
+    "moods",
+    "intents",
+    "components"
+  ],
+  "mcp_tools": [
+    "list_design_systems",
+    "list_pattern_categories",
+    "search_designs",
+    "search_patterns",
+    "get_design_system",
+    "get_pattern",
+    "get_tokens",
+    "get_preview_path"
+  ],
+  "files": 64
+}

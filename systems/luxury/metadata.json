@@ -1,0 +1,23 @@
+{
+  "name": "luxury",
+  "industries": [
+    "luxury",
+    "fashion",
+    "hospitality"
+  ],
+  "styles": [
+    "luxury",
+    "minimal",
+    "editorial"
+  ],
+  "moods": [
+    "premium",
+    "quiet",
+    "timeless"
+  ],
+  "intents": [
+    "differentiate",
+    "establish-authority",
+    "build-credibility"
+  ]
+}

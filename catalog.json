@@ -1,0 +1,751 @@
+{
+  "version": "0.2.0",
+  "systems": [
+    {
+      "name": "corporate",
+      "title": "Corporate",
+      "path": "systems/corporate/DESIGN.md",
+      "industries": [
+        "corporate",
+        "professional-services"
+      ],
+      "styles": [
+        "corporate",
+        "modern",
+        "institutional"
+      ],
+      "moods": [
+        "trustworthy",
+        "confident",
+        "technical"
+      ],
+      "intents": [
+        "establish-trust",
+        "build-credibility",
+        "drive-contact"
+      ],
+      "tags": [
+        "corporate",
+        "design-system",
+        "institutional",
+        "modern",
+        "professional-services"
+      ]
+    },
+    {
+      "name": "ecommerce",
+      "title": "Ecommerce",
+      "path": "systems/ecommerce/DESIGN.md",
+      "industries": [
+        "ecommerce",
+        "fashion"
+      ],
+      "styles": [
+        "modern",
+        "minimal"
+      ],
+      "moods": [
+        "confident",
+        "friendly",
+        "energetic"
+      ],
+      "intents": [
+        "drive-purchase",
+        "compare-options",
+        "reduce-friction"
+      ],
+      "tags": [
+        "design-system",
+        "ecommerce",
+        "fashion",
+        "minimal",
+        "modern"
+      ]
+    },
+    {
+      "name": "editorial",
+      "title": "Editorial",
+      "path": "systems/editorial/DESIGN.md",
+      "industries": [
+        "editorial",
+        "professional-services"
+      ],
+      "styles": [
+        "editorial",
+        "timeless"
+      ],
+      "moods": [
+        "calm",
+        "confident",
+        "timeless"
+      ],
+      "intents": [
+        "educate",
+        "build-credibility",
+        "navigate-content"
+      ],
+      "tags": [
+        "design-system",
+        "editorial",
+        "professional-services",
+        "timeless"
+      ]
+    },
+    {
+      "name": "legal",
+      "title": "Legal",
+      "path": "systems/legal/DESIGN.md",
+      "industries": [
+        "legal",
+        "professional-services"
+      ],
+      "styles": [
+        "editorial",
+        "premium",
+        "institutional"
+      ],
+      "moods": [
+        "authoritative",
+        "calm",
+        "timeless"
+      ],
+      "intents": [
+        "establish-authority",
+        "establish-trust",
+        "drive-contact",
+        "build-credibility"
+      ],
+      "tags": [
+        "design-system",
+        "editorial",
+        "institutional",
+        "legal",
+        "premium",
+        "professional-services"
+      ]
+    },
+    {
+      "name": "luxury",
+      "title": "Luxury",
+      "path": "systems/luxury/DESIGN.md",
+      "industries": [
+        "luxury",
+        "fashion",
+        "hospitality"
+      ],
+      "styles": [
+        "luxury",
+        "minimal",
+        "editorial"
+      ],
+      "moods": [
+        "premium",
+        "quiet",
+        "timeless"
+      ],
+      "intents": [
+        "differentiate",
+        "establish-authority",
+        "build-credibility"
+      ],
+      "tags": [
+        "design-system",
+        "editorial",
+        "fashion",
+        "hospitality",
+        "luxury",
+        "minimal"
+      ]
+    },
+    {
+      "name": "saas",
+      "title": "Saas",
+      "path": "systems/saas/DESIGN.md",
+      "industries": [
+        "saas",
+        "technical"
+      ],
+      "styles": [
+        "modern",
+        "technical",
+        "minimal"
+      ],
+      "moods": [
+        "energetic",
+        "confident",
+        "technical"
+      ],
+      "intents": [
+        "explain-product",
+        "drive-signup",
+        "differentiate",
+        "reduce-friction"
+      ],
+      "tags": [
+        "design-system",
+        "minimal",
+        "modern",
+        "saas",
+        "technical"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "name": "feature-grid",
+      "title": "Feature Grid",
+      "category": "cards",
+      "path": "patterns/cards/feature-grid.md",
+      "preview": "patterns/cards/feature-grid.html",
+      "tags": [
+        "features",
+        "cards",
+        "grid",
+        "benefits"
+      ],
+      "industries": [
+        "saas",
+        "corporate",
+        "education",
+        "medical"
+      ],
+      "styles": [
+        "modern",
+        "corporate",
+        "minimal"
+      ],
+      "moods": [
+        "technical",
+        "confident",
+        "friendly"
+      ],
+      "intents": [
+        "explain-product",
+        "differentiate",
+        "educate"
+      ]
+    },
+    {
+      "name": "service-grid",
+      "title": "Service Card Grid",
+      "category": "cards",
+      "path": "patterns/cards/service-grid.md",
+      "preview": "patterns/cards/service-grid.html",
+      "tags": [
+        "cards",
+        "services",
+        "grid",
+        "professional"
+      ],
+      "industries": [
+        "professional-services",
+        "legal",
+        "corporate"
+      ],
+      "styles": [
+        "modern",
+        "minimal"
+      ],
+      "moods": [
+        "confident",
+        "calm"
+      ],
+      "intents": [
+        "navigate-content"
+      ]
+    },
+    {
+      "name": "timeline",
+      "title": "Content Timeline",
+      "category": "content",
+      "path": "patterns/content/timeline.md",
+      "preview": "patterns/content/timeline.html",
+      "tags": [
+        "timeline",
+        "process",
+        "history",
+        "content"
+      ],
+      "industries": [
+        "legal",
+        "corporate",
+        "education",
+        "medical"
+      ],
+      "styles": [
+        "editorial",
+        "institutional"
+      ],
+      "moods": [
+        "authoritative",
+        "calm",
+        "technical"
+      ],
+      "intents": [
+        "educate",
+        "present-information",
+        "build-credibility"
+      ]
+    },
+    {
+      "name": "simple",
+      "title": "Simple CTA",
+      "category": "cta",
+      "path": "patterns/cta/simple.md",
+      "preview": "patterns/cta/simple.html",
+      "tags": [
+        "cta",
+        "conversion",
+        "footer"
+      ],
+      "industries": [
+        "general",
+        "corporate",
+        "saas"
+      ],
+      "styles": [
+        "modern",
+        "minimal"
+      ],
+      "moods": [
+        "confident",
+        "calm"
+      ],
+      "intents": [
+        "navigate-content"
+      ]
+    },
+    {
+      "name": "accordion",
+      "title": "Accessible FAQ",
+      "category": "faq",
+      "path": "patterns/faq/accordion.md",
+      "preview": "patterns/faq/accordion.html",
+      "tags": [
+        "faq",
+        "accordion",
+        "content",
+        "accessibility"
+      ],
+      "industries": [
+        "general",
+        "legal",
+        "saas",
+        "ecommerce",
+        "education"
+      ],
+      "styles": [
+        "minimal",
+        "editorial"
+      ],
+      "moods": [
+        "calm",
+        "trustworthy"
+      ],
+      "intents": [
+        "educate",
+        "reduce-friction",
+        "establish-trust"
+      ]
+    },
+    {
+      "name": "simple",
+      "title": "Simple Footer",
+      "category": "footer",
+      "path": "patterns/footer/simple.md",
+      "preview": "patterns/footer/simple.html",
+      "tags": [
+        "footer",
+        "navigation",
+        "responsive"
+      ],
+      "industries": [
+        "general",
+        "corporate",
+        "saas",
+        "editorial"
+      ],
+      "styles": [
+        "modern",
+        "minimal"
+      ],
+      "moods": [
+        "confident",
+        "calm"
+      ],
+      "intents": [
+        "navigate-content"
+      ]
+    },
+    {
+      "name": "contact",
+      "title": "Accessible Contact Form",
+      "category": "forms",
+      "path": "patterns/forms/contact.md",
+      "preview": "patterns/forms/contact.html",
+      "tags": [
+        "forms",
+        "contact",
+        "accessibility"
+      ],
+      "industries": [
+        "general",
+        "legal",
+        "professional-services",
+        "corporate"
+      ],
+      "styles": [
+        "modern",
+        "minimal"
+      ],
+      "moods": [
+        "calm",
+        "trustworthy"
+      ],
+      "intents": [
+        "establish-trust",
+        "drive-contact"
+      ]
+    },
+    {
+      "name": "corporate",
+      "title": "Corporate Hero",
+      "category": "hero",
+      "path": "patterns/hero/corporate.md",
+      "preview": "patterns/hero/corporate.html",
+      "tags": [
+        "hero",
+        "corporate",
+        "b2b",
+        "conversion"
+      ],
+      "industries": [
+        "corporate",
+        "saas",
+        "professional-services"
+      ],
+      "styles": [
+        "modern",
+        "minimal"
+      ],
+      "moods": [
+        "confident",
+        "calm"
+      ],
+      "intents": [
+        "navigate-content"
+      ]
+    },
+    {
+      "name": "editorial",
+      "title": "Editorial Hero",
+      "category": "hero",
+      "path": "patterns/hero/editorial.md",
+      "preview": "patterns/hero/editorial.html",
+      "tags": [
+        "hero",
+        "editorial",
+        "professional",
+        "content-first"
+      ],
+      "industries": [
+        "editorial",
+        "professional-services"
+      ],
+      "styles": [
+        "minimal",
+        "editorial"
+      ],
+      "moods": [
+        "confident",
+        "calm"
+      ],
+      "intents": [
+        "navigate-content"
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "title": "Breadcrumb Navigation",
+      "category": "navigation",
+      "path": "patterns/navigation/breadcrumb.md",
+      "preview": "patterns/navigation/breadcrumb.html",
+      "tags": [
+        "breadcrumb",
+        "navigation",
+        "wayfinding",
+        "accessibility"
+      ],
+      "industries": [
+        "general",
+        "legal",
+        "ecommerce",
+        "editorial"
+      ],
+      "styles": [
+        "minimal",
+        "editorial",
+        "corporate"
+      ],
+      "moods": [
+        "calm",
+        "technical"
+      ],
+      "intents": [
+        "navigate-content",
+        "reduce-friction"
+      ]
+    },
+    {
+      "name": "header",
+      "title": "Simple Header Navigation",
+      "category": "navigation",
+      "path": "patterns/navigation/header.md",
+      "preview": "patterns/navigation/header.html",
+      "tags": [
+        "navigation",
+        "header",
+        "responsive",
+        "accessibility"
+      ],
+      "industries": [
+        "general",
+        "corporate",
+        "saas",
+        "ecommerce"
+      ],
+      "styles": [
+        "modern",
+        "minimal"
+      ],
+      "moods": [
+        "confident",
+        "calm"
+      ],
+      "intents": [
+        "navigate-content"
+      ]
+    },
+    {
+      "name": "three-tier",
+      "title": "Three Tier Pricing",
+      "category": "pricing",
+      "path": "patterns/pricing/three-tier.md",
+      "preview": "patterns/pricing/three-tier.html",
+      "tags": [
+        "pricing",
+        "conversion",
+        "comparison",
+        "saas"
+      ],
+      "industries": [
+        "saas",
+        "ecommerce",
+        "professional-services"
+      ],
+      "styles": [
+        "corporate",
+        "modern",
+        "minimal"
+      ],
+      "moods": [
+        "confident",
+        "technical"
+      ],
+      "intents": [
+        "compare-options",
+        "drive-signup",
+        "reduce-friction"
+      ]
+    },
+    {
+      "name": "impact-grid",
+      "title": "Impact Statistics Grid",
+      "category": "stats",
+      "path": "patterns/stats/impact-grid.md",
+      "preview": "patterns/stats/impact-grid.html",
+      "tags": [
+        "stats",
+        "metrics",
+        "credibility",
+        "corporate"
+      ],
+      "industries": [
+        "corporate",
+        "saas",
+        "professional-services"
+      ],
+      "styles": [
+        "corporate",
+        "minimal"
+      ],
+      "moods": [
+        "confident",
+        "technical"
+      ],
+      "intents": [
+        "build-credibility",
+        "establish-trust"
+      ]
+    },
+    {
+      "name": "team-grid",
+      "title": "Professional Team Grid",
+      "category": "team",
+      "path": "patterns/team/team-grid.md",
+      "preview": "patterns/team/team-grid.html",
+      "tags": [
+        "team",
+        "people",
+        "professional-services",
+        "credibility"
+      ],
+      "industries": [
+        "legal",
+        "professional-services",
+        "corporate",
+        "medical"
+      ],
+      "styles": [
+        "editorial",
+        "corporate",
+        "minimal"
+      ],
+      "moods": [
+        "trustworthy",
+        "calm",
+        "authoritative"
+      ],
+      "intents": [
+        "build-credibility",
+        "establish-trust"
+      ]
+    },
+    {
+      "name": "editorial",
+      "title": "Editorial Testimonial",
+      "category": "testimonials",
+      "path": "patterns/testimonials/editorial.md",
+      "preview": "patterns/testimonials/editorial.html",
+      "tags": [
+        "testimonials",
+        "social-proof",
+        "editorial"
+      ],
+      "industries": [
+        "professional-services",
+        "editorial",
+        "legal"
+      ],
+      "styles": [
+        "minimal",
+        "editorial"
+      ],
+      "moods": [
+        "calm",
+        "trustworthy"
+      ],
+      "intents": [
+        "navigate-content"
+      ]
+    }
+  ],
+  "taxonomy": {
+    "industries": [
+      "general",
+      "legal",
+      "professional-services",
+      "corporate",
+      "saas",
+      "fintech",
+      "ecommerce",
+      "medical",
+      "healthcare",
+      "education",
+      "real-estate",
+      "architecture",
+      "hospitality",
+      "travel",
+      "fashion",
+      "luxury",
+      "editorial",
+      "nonprofit"
+    ],
+    "styles": [
+      "editorial",
+      "minimal",
+      "corporate",
+      "luxury",
+      "modern",
+      "brutalist",
+      "soft",
+      "technical",
+      "institutional",
+      "premium",
+      "playful",
+      "organic"
+    ],
+    "moods": [
+      "calm",
+      "authoritative",
+      "premium",
+      "trustworthy",
+      "friendly",
+      "bold",
+      "technical",
+      "warm",
+      "timeless",
+      "energetic",
+      "quiet",
+      "confident"
+    ],
+    "intents": [
+      "establish-trust",
+      "establish-authority",
+      "introduce-service",
+      "explain-product",
+      "drive-contact",
+      "drive-signup",
+      "drive-purchase",
+      "educate",
+      "differentiate",
+      "social-proof",
+      "reduce-friction",
+      "navigate-content",
+      "present-information",
+      "compare-options",
+      "build-credibility"
+    ],
+    "components": [
+      "header",
+      "navigation",
+      "mega-menu",
+      "breadcrumb",
+      "hero",
+      "logo-cloud",
+      "stats",
+      "services",
+      "feature-grid",
+      "cards",
+      "pricing",
+      "comparison",
+      "testimonials",
+      "team",
+      "timeline",
+      "faq",
+      "form",
+      "search",
+      "filters",
+      "blog",
+      "article",
+      "gallery",
+      "cta",
+      "footer",
+      "dashboard",
+      "table",
+      "tabs",
+      "modal",
+      "alert"
+    ]
+  }
+}
